@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Citações - MindElevate</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .citation-card {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+      margin-bottom: 30px;
+      text-align: center;
+      background-color: #f8f8f8;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .citation-text {
+      font-size: 16px;
+      font-style: italic;
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+    .citation-author {
+      font-size: 14px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .row-eq-height {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .row-eq-height .col-sm-4 {
+      display: flex;
+      flex: 1;
+      margin-bottom: 30px;
+    }
+
+    .navbar {
+      font-family: Montserrat, sans-serif;
+      margin-bottom: 0;
+      background-color: #2d2d30;
+      border: 0;
+      font-size: 11px !important;
+      letter-spacing: 4px;
+      opacity: 0.9;
+    }
+
+    .navbar li a, .navbar .navbar-brand {
+      color: #d5d5d5 !important;
+    }
+
+    .navbar-nav li a:hover {
+      color: #fff !important;
+    }
+
+    .navbar-nav li.active a {
+      color: #fff !important;
+      background-color: #29292c !important;
+    }
+
+    .navbar-default .navbar-toggle {
+      border-color: transparent;
+    }
+
+    footer {
+      background-color: #2d2d30;
+      color: #f5f5f5;
+      padding: 32px;
+    }
+
+    footer a {
+      color: #f5f5f5;
+    }
+
+    footer a:hover {
+      color: #777;
+      text-decoration: none;
+    }
+
+    footer .up-arrow {
+      margin-bottom: 30px;
+    }
+  </style>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<!-- Navbar -->
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#myPage">MindElevate</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="index.html">VOLTAR</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Conteúdo -->
+<div class="container" style="margin-top: 50px;">
+  <h2 class="text-center">Citações Inspiradoras</h2>
+  <p class="text-center">Explore algumas das melhores citações sobre desenvolvimento pessoal e bem-estar.</p>
+  <br>
+
+  <div class="row row-eq-height">
+    <!-- Citação 1 -->
+    <div class="col-sm-4">
+      <div class="citation-card">
+        <p class="citation-text">"O sucesso é a soma de pequenos esforços repetidos dia após dia."</p>
+        <p class="citation-author">- Robert Collier</p>
+      </div>
+    </div>
+
+    <!-- Citação 2 -->
+    <div class="col-sm-4">
+      <div class="citation-card">
+        <p class="citation-text">"Você deve ser a mudança que deseja ver no mundo."</p>
+        <p class="citation-author">- Mahatma Gandhi</p>
+      </div>
+    </div>
+
+    <!-- Citação 3 -->
+    <div class="col-sm-4">
+      <div class="citation-card">
+        <p class="citation-text">"A vida é 10% o que acontece com você e 90% como você reage."</p>
+        <p class="citation-author">- Charles R. Swindoll</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="row row-eq-height">
+    <!-- Citação 4 -->
+    <div class="col-sm-4">
+      <div class="citation-card">
+        <p class="citation-text">"Não importa quão devagar você vá, desde que não pare."</p>
+        <p class="citation-author">- Confúcio</p>
+      </div>
+    </div>
+
+    <!-- Citação 5 -->
+    <div class="col-sm-4">
+      <div class="citation-card">
+        <p class="citation-text">"A única maneira de fazer um ótimo trabalho é amar o que você faz."</p>
+        <p class="citation-author">- Steve Jobs</p>
+      </div>
+    </div>
+
+    <!-- Citação 6 -->
+    <div class="col-sm-4">
+      <div class="citation-card">
+        <p class="citation-text">"A felicidade não é algo pronto. Ela vem de suas próprias ações."</p>
+        <p class="citation-author">- Dalai Lama</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="text-center">
+  <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+  <p>MindElevate</p>
+</footer>
+
+<script>
+$(document).ready(function(){
+  // Initialize Tooltip
+  $('[data-toggle="tooltip"]').tooltip();
+ 
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      event.preventDefault();
+      var hash = this.hash;
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+        window.location.hash = hash;
+      });
+    } 
+  });
+})
+</script>
+
+</body>
+</html>
